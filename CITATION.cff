@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: "Knee MRI Quantitative Processing Pipeline"
+message: "If you use this pipeline, please cite it using the metadata from this file."
+type: software
+authors:
+  - family-names: Camilleri
+    given-names: Val
+version: "1.4.0"
+date-released: 2026-08-11
+abstract: "A containerised research pipeline for quantitative knee MRI processing, including cartilage segmentation, DWI preprocessing, tensor-derived diffusion metrics, T2-map extraction, and segment-level quantitative analysis."
+license: MIT
+repository-code: "https://github.com/ValentinaCamilleri/knee-mri-quantitative-pipeline"
+url: "https://github.com/ValentinaCamilleri/knee-mri-quantitative-pipeline"
+keywords:
+  - knee MRI
+  - cartilage segmentation
+  - diffusion MRI
+  - T2 mapping
+  - nnU-Net

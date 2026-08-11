@@ -1,0 +1,73 @@
+# MRI data and outputs
+*.nii
+*.nii.gz
+*.mif
+*.tck
+*.trk
+*.mgz
+*.bval
+*.bvec
+*.json
+!config/cartilage-labels.json
+*.csv
+*.csv.gz
+
+# Work/output folders
+KneeDockerWork/
+KneeDockerOutput/
+work/
+output/
+data/
+derivatives/
+
+# Containers and images
+*.sif
+*.tar
+*.tar.gz
+*.img
+
+# Python/cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Logs
+*.log
+logs/
+KneeDockerBatchLogs/
+
+# System/editor
+.DS_Store
+.vscode/
+.idea/
+
+# Local build/debug files
+acqparams.txt
+knee_mri_pipeline_*.def
+Dockerfile.runtime-update
+
+# Model weights are not committed by default. Keep the runtime-mount
+# instructions in Git so a fresh clone still has a valid Docker context.
+models/*
+!models/README.md
+!models/MODEL_CARD.md
+!models/checksums.sha256
+
+# Local model used when building the published Docker image
+models/runtime/
+
+# Prevent accidental MRI/model commits
+*.pth
+*.nii
+*.nii.gz
+*.dcm
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo

@@ -1,0 +1,24 @@
+{
+  "description": "Anatomically reviewed label schema for the Dataset501 model used by this pipeline",
+  "raw_model_labels": {
+    "0": "background",
+    "1": "femur_bone",
+    "2": "femoral_cartilage",
+    "3": "tibia_bone",
+    "4": "medial_tibial_cartilage",
+    "5": "lateral_tibial_cartilage"
+  },
+  "analysis_labels": {
+    "0": "background",
+    "201": "medial_femoral_cartilage",
+    "202": "lateral_femoral_cartilage",
+    "4": "medial_tibial_cartilage",
+    "5": "lateral_tibial_cartilage"
+  },
+  "notes": [
+    "Raw labels 1 and 3 are bone and are excluded from cartilage measurements.",
+    "Only raw labels 2, 4, and 5 are included in quantitative masks.",
+    "Raw label 2 is split automatically using the medial/lateral tibial cartilage centroids without deleting cartilage voxels.",
+    "This reviewed schema supersedes the incorrect anatomical names in the historical Dataset501 dataset.json."
+  ]
+}

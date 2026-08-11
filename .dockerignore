@@ -1,0 +1,36 @@
+.git
+.gitignore
+*.sif
+*.nii
+*.nii.gz
+*.mif
+*.tck
+*.trk
+*.csv
+*.csv.gz
+KneeDockerWork
+KneeDockerOutput
+logs
+data
+work
+output
+derivatives
+__pycache__
+*.pyc
+
+# Runtime model is packaged into the Docker image
+!models/README.md
+!models/MODEL_CARD.md
+!models/checksums.sha256
+!models/runtime/
+!models/runtime/**
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
