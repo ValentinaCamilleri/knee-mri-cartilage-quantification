@@ -100,4 +100,5 @@ RUN test -f /models/Dataset501_KneeCartilage/nnUNetTrainer__nnUNetPlans__3d_full
     /opt/conda/envs/nnunet/bin/python -c \
       "import nibabel, numpy, scipy, torch, nnunetv2; print('PyTorch:', torch.__version__); print('nnU-Net imported successfully')"
 
+LABEL org.opencontainers.image.source="https://github.com/ValentinaCamilleri/knee-mri-cartilage-quantification"
 ENTRYPOINT ["/pipeline/scripts/run_pipeline.sh"]
